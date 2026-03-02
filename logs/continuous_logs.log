@@ -1,0 +1,13 @@
+2026-02-27 19:39:05,494 summarizerlogger INFO logger is implemented
+2026-03-01 11:53:32,184 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-01 11:53:32,192 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-01 11:53:32,192 summarizerlogger INFO created directory at: artifacts
+2026-03-01 11:53:32,192 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-01 11:53:40,906 summarizerlogger INFO File is downloaded
+2026-03-02 19:15:05,853 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 19:15:05,869 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:15:05,892 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:15:05,893 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:15:05,893 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 19:15:09,246 summarizerlogger INFO File is downloaded
+2026-03-02 19:15:09,426 summarizerlogger INFO Stage Data Ingestion stage Completed
