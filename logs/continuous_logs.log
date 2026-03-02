@@ -11,3 +11,181 @@
 2026-03-02 19:15:05,893 summarizerlogger INFO created directory at: artifacts/data_ingestion
 2026-03-02 19:15:09,246 summarizerlogger INFO File is downloaded
 2026-03-02 19:15:09,426 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-02 19:22:18,659 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 19:24:41,542 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:24:41,546 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:24:41,548 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:24:41,551 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 19:24:42,165 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:24:42,234 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:42,448 httpx INFO HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:42,961 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:24:43,053 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:43,261 httpx INFO HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:43,653 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 19:24:43,932 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 19:24:44,217 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/spiece.model "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:24:44,219 huggingface_hub.utils._http WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-02 19:24:44,297 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"
+2026-03-02 19:24:44,379 httpx INFO HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"
+2026-03-02 19:24:45,474 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer.json "HTTP/1.1 404 Not Found"
+2026-03-02 19:24:45,766 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-03-02 19:24:46,047 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:24:46,106 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:46,182 httpx INFO HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-03-02 19:24:46,466 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-03-02 19:33:27,503 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:33:27,505 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:33:27,507 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:33:27,509 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 19:33:27,968 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:33:28,045 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 19:33:28,334 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:33:28,393 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 19:33:28,672 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 19:33:28,957 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 19:33:48,190 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 19:33:48,194 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:33:48,194 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:33:48,194 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:33:48,194 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 19:33:51,226 summarizerlogger INFO File is downloaded
+2026-03-02 19:33:51,417 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-02 19:33:59,519 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:33:59,519 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:33:59,519 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:33:59,519 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 19:33:59,984 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:34:00,053 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 19:34:00,508 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:34:00,583 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 19:34:00,891 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 19:34:01,288 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 19:37:00,333 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:37:00,338 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:37:00,341 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:37:00,345 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 19:37:00,868 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:37:00,961 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 19:37:01,251 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 19:37:01,320 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 19:37:01,617 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 19:37:01,945 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 19:55:45,907 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 19:55:46,565 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 19:55:46,568 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:55:46,569 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:55:46,571 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:55:46,571 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 19:55:46,571 summarizerlogger INFO File already exits
+2026-03-02 19:55:46,655 summarizerlogger ERROR [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_ingestion.py", line 32, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\TextSummarizzer\venv\lib\zipfile.py", line 1634, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\TextSummarizzer\venv\lib\zipfile.py", line 1688, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-03-02 19:58:33,302 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 19:58:33,851 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 19:58:33,854 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 19:58:33,854 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 19:58:33,854 summarizerlogger INFO created directory at: artifacts
+2026-03-02 19:58:33,854 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 19:58:33,854 summarizerlogger INFO File already exits
+2026-03-02 19:58:33,932 summarizerlogger ERROR [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_ingestion.py", line 46, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-03-02 20:01:09,429 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 20:01:09,980 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 20:01:09,996 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 20:01:09,996 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 20:01:09,996 summarizerlogger INFO created directory at: artifacts
+2026-03-02 20:01:09,999 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 20:01:09,999 summarizerlogger INFO File already exits
+2026-03-02 20:01:10,070 summarizerlogger ERROR [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_ingestion.py", line 48, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-03-02 20:05:48,779 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 20:05:49,329 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 20:05:49,329 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 20:05:49,329 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 20:05:49,329 summarizerlogger INFO created directory at: artifacts
+2026-03-02 20:05:49,329 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 20:05:53,450 summarizerlogger INFO File is downloaded
+2026-03-02 20:05:53,629 summarizerlogger INFO Unzipping completed
+2026-03-02 20:05:53,629 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-02 20:05:53,629 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-02 20:05:53,629 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 20:05:53,629 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 20:05:53,642 summarizerlogger INFO created directory at: artifacts
+2026-03-02 20:05:53,642 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 20:05:54,144 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 20:05:54,198 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 20:05:54,482 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 20:05:54,532 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 20:05:54,884 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 20:05:55,283 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 20:05:57,509 summarizerlogger ERROR PegasusTokenizer has no attribute as_target_tokenizer
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 22, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_transformation.py", line 28, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\dataset_dict.py", line 953, in map
+    dataset_dict[split] = dataset.map(
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\arrow_dataset.py", line 562, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\arrow_dataset.py", line 3406, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\arrow_dataset.py", line 3759, in _map_single
+    for i, batch in iter_outputs(shard_iterable):
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\arrow_dataset.py", line 3712, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+  File "E:\TextSummarizzer\venv\lib\site-packages\datasets\arrow_dataset.py", line 3635, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_transformation.py", line 17, in convert_examples_to_features
+    with self.tokenizer.as_target_tokenizer():
+  File "E:\TextSummarizzer\venv\lib\site-packages\transformers\tokenization_utils_base.py", line 1291, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: PegasusTokenizer has no attribute as_target_tokenizer
+2026-03-02 20:07:50,315 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-02 20:07:51,063 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-02 20:07:51,066 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 20:07:51,068 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 20:07:51,068 summarizerlogger INFO created directory at: artifacts
+2026-03-02 20:07:51,070 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-02 20:07:51,071 summarizerlogger INFO File already exits
+2026-03-02 20:07:51,257 summarizerlogger INFO Unzipping completed
+2026-03-02 20:07:51,258 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-02 20:07:51,258 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-02 20:07:51,263 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-02 20:07:51,265 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-02 20:07:51,266 summarizerlogger INFO created directory at: artifacts
+2026-03-02 20:07:51,266 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-02 20:07:51,757 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 20:07:51,825 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 20:07:52,136 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 20:07:52,189 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 20:07:52,483 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 20:07:52,769 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-02 20:08:02,035 summarizerlogger INFO Stage Data Transformation stage Completed

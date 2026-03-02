@@ -2,19 +2,18 @@ import os
 import urllib.request as request
 import zipfile
 from src.textSummarizer.logging import logger
-
 from src.textSummarizer.entity import DataIngestionConfig
 
 
 class DataIngestion:
-    def __init__(self,config:DataIngestionConfig):
-        self.config=config
+    def __init__(self, config: DataIngestionConfig):
+        self.config = config
 
     def downlaod_file(self):
         if not os.path.exists(self.config.local_data_file):
             filename, headers = request.urlretrieve(
-                url = self.config.source_URL,
-                filename = self.config.local_data_file
+                url=self.config.source_URL,
+                filename=self.config.local_data_file
             )
             logger.info(f"File is downloaded")
         else:
@@ -28,7 +27,25 @@ class DataIngestion:
         """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
-        with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)
 
-    
+        with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+            for member in zip_ref.namelist():
+                # Normalize separators for Windows
+                clean_name = member.replace('/', os.sep).replace('\\', os.sep)
+
+                # Fix invalid Windows path characters
+                clean_name = clean_name.replace(':', '_').replace('*', '_') \
+                                       .replace('?', '_').replace('"', '_') \
+                                       .replace('<', '_').replace('>', '_') \
+                                       .replace('|', '_')
+
+                target_path = os.path.normpath(os.path.join(unzip_path, clean_name))
+
+                if member.endswith('/'):
+                    os.makedirs(target_path, exist_ok=True)
+                else:
+                    os.makedirs(os.path.dirname(target_path), exist_ok=True)
+                    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                        target.write(source.read())
+
+        logger.info("Unzipping completed")
