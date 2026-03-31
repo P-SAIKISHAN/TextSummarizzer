@@ -822,3 +822,200 @@ TypeError: Trainer.__init__() got an unexpected keyword argument 'processing_cla
 2026-03-31 06:28:09,776 summarizerlogger INFO created directory at: artifacts
 2026-03-31 06:28:09,777 summarizerlogger INFO created directory at: artifacts/model_trainer
 2026-03-31 07:40:10,203 summarizerlogger INFO Stage Model Trainer stage Completed
+2026-03-31 07:53:45,807 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-31 07:53:56,884 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 07:53:56,890 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 07:53:56,892 summarizerlogger INFO created directory at: artifacts
+2026-03-31 07:55:46,457 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 07:55:46,461 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 07:55:46,463 summarizerlogger INFO created directory at: artifacts
+2026-03-31 07:55:46,465 summarizerlogger INFO created directory at: artifacts/model_evaluation
+2026-03-31 08:02:06,500 absl INFO Using default tokenizer.
+2026-03-31 08:13:30,874 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 08:13:30,874 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 08:14:09,065 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 08:14:09,065 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 08:18:34,289 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 08:18:34,289 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 08:18:40,819 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 08:18:40,827 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:18:40,830 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:18:40,831 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:18:40,831 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 08:18:40,831 summarizerlogger INFO File already exits
+2026-03-31 08:18:40,988 summarizerlogger INFO Unzipping completed
+2026-03-31 08:18:40,988 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 08:18:40,988 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 08:18:40,988 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:18:40,996 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:18:40,997 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:18:40,998 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 08:18:43,242 summarizerlogger ERROR [Errno 22] Invalid argument: 'E:/TextSummarizzer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_transformation.py", line 36, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir, "samsum_dataset"))
+  File "E:\Conda\Lib\site-packages\datasets\dataset_dict.py", line 1377, in save_to_disk
+    dataset.save_to_disk(
+  File "E:\Conda\Lib\site-packages\datasets\arrow_dataset.py", line 1921, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\datasets\arrow_dataset.py", line 1945, in _save_to_disk_single
+    writer = ArrowWriter(
+             ^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\datasets\arrow_writer.py", line 524, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        ^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 214, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 391, in __init__
+    self._open()
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 396, in _open
+    self.f = open(self.path, mode=self.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'E:/TextSummarizzer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+2026-03-31 08:21:29,629 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 08:21:29,629 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 08:21:32,781 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 08:21:32,791 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:21:32,794 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:21:32,794 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:21:32,795 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 08:21:32,795 summarizerlogger INFO File already exits
+2026-03-31 08:21:32,952 summarizerlogger INFO Unzipping completed
+2026-03-31 08:21:32,952 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 08:21:32,952 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 08:21:32,958 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:21:32,960 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:21:32,961 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:21:32,962 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 08:21:35,172 summarizerlogger ERROR [Errno 22] Invalid argument: 'E:/TextSummarizzer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "E:\TextSummarizzer\src\textSummarizer\components\data_transformation.py", line 36, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir, "samsum_dataset"))
+  File "E:\Conda\Lib\site-packages\datasets\dataset_dict.py", line 1377, in save_to_disk
+    dataset.save_to_disk(
+  File "E:\Conda\Lib\site-packages\datasets\arrow_dataset.py", line 1921, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\datasets\arrow_dataset.py", line 1945, in _save_to_disk_single
+    writer = ArrowWriter(
+             ^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\datasets\arrow_writer.py", line 524, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        ^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 214, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 391, in __init__
+    self._open()
+  File "E:\Conda\Lib\site-packages\fsspec\implementations\local.py", line 396, in _open
+    self.f = open(self.path, mode=self.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'E:/TextSummarizzer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+2026-03-31 08:26:38,159 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 08:26:38,159 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 08:26:41,347 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 08:26:41,354 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:26:41,357 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:26:41,358 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:26:41,358 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 08:26:41,359 summarizerlogger INFO File already exits
+2026-03-31 08:26:41,512 summarizerlogger INFO Unzipping completed
+2026-03-31 08:26:41,512 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 08:26:41,512 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 08:26:41,512 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:26:41,522 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:26:41,522 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:26:41,523 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 08:26:43,881 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 08:26:43,895 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 08:26:43,900 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 08:26:43,903 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 08:26:43,904 summarizerlogger INFO created directory at: artifacts
+2026-03-31 08:26:43,904 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 09:42:44,958 summarizerlogger ERROR Error while serializing: I/O error: The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 34, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 44, in train
+    model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-samsum-model"))
+  File "E:\Conda\Lib\site-packages\transformers\modeling_utils.py", line 2584, in save_pretrained
+    safe_save_file(shard, os.path.join(save_directory, shard_file), metadata={"format": "pt"})
+  File "E:\Conda\Lib\site-packages\safetensors\torch.py", line 307, in save_file
+    serialize_file(_flatten(tensors), filename, metadata=metadata)
+safetensors_rust.SafetensorError: Error while serializing: I/O error: The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+2026-03-31 09:46:39,014 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 09:46:39,014 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 09:48:10,920 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 09:48:10,920 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 09:48:43,819 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 09:48:43,819 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 09:48:47,968 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 09:48:47,974 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 09:48:47,976 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 09:48:47,977 summarizerlogger INFO created directory at: artifacts
+2026-03-31 09:48:47,977 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 09:48:47,978 summarizerlogger INFO File already exits
+2026-03-31 09:48:48,123 summarizerlogger INFO Unzipping completed
+2026-03-31 09:48:48,123 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 09:48:48,123 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 09:48:48,141 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 09:48:48,145 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 09:48:48,145 summarizerlogger INFO created directory at: artifacts
+2026-03-31 09:48:48,146 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 09:48:50,577 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 09:48:50,577 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 09:48:50,592 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 09:48:50,594 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 09:48:50,595 summarizerlogger INFO created directory at: artifacts
+2026-03-31 09:48:50,595 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 11:11:55,868 summarizerlogger ERROR 
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 34, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 41, in train
+    trainer.train()
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 1859, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 2298, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 2673, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 2752, in _save_checkpoint
+    self.save_model(output_dir, _internal_call=True)
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 3252, in save_model
+    self._save(output_dir)
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 3327, in _save
+    self.model.save_pretrained(
+  File "E:\Conda\Lib\site-packages\transformers\modeling_utils.py", line 2584, in save_pretrained
+    safe_save_file(shard, os.path.join(save_directory, shard_file), metadata={"format": "pt"})
+  File "E:\Conda\Lib\site-packages\safetensors\torch.py", line 307, in save_file
+    serialize_file(_flatten(tensors), filename, metadata=metadata)
+                   ^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\safetensors\torch.py", line 547, in _flatten
+    "data": _tobytes(v, k),
+            ^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\safetensors\torch.py", line 503, in _tobytes
+    return data.tobytes()
+           ^^^^^^^^^^^^^^
+MemoryError

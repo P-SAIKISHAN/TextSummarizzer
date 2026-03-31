@@ -2,10 +2,17 @@ import os
 from box.exceptions import BoxValueError
 import yaml
 from src.textSummarizer.logging import logger
-from ensure import ensure_annotations
+from functools import wraps
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
+
+
+def ensure_annotations(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        return f(*args, **kwargs)
+    return wrapper
 
 
 @ensure_annotations

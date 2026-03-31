@@ -32,15 +32,15 @@ class ModelTrainer:
             save_strategy='epoch',
             gradient_accumulation_steps=16,
             report_to="none"
-        ) 
+        )
         trainer = Trainer(model=model_pegasus, args=trainer_args,
                   tokenizer=tokenizer, data_collator=seq2seq_data_collator,
                   train_dataset=dataset_samsum_pt["test"],
                   eval_dataset=dataset_samsum_pt["validation"])
-        
+
         trainer.train()
 
         ## Save model
-        model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-samsum-model"))
+        model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-samsum-model"), safe_serialization=False)
         ## Save tokenizer
         tokenizer.save_pretrained(os.path.join(self.config.root_dir,"tokenizer"))
