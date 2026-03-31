@@ -189,3 +189,636 @@ AttributeError: PegasusTokenizer has no attribute as_target_tokenizer
 2026-03-02 20:07:52,483 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
 2026-03-02 20:07:52,769 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
 2026-03-02 20:08:02,035 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-03 11:32:10,988 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-03 11:33:40,403 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 11:33:40,446 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 11:33:40,449 summarizerlogger INFO created directory at: artifacts
+2026-03-03 11:33:40,451 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 11:33:40,986 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:33:41,064 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-03 11:33:41,445 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:33:41,508 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-03 11:33:41,820 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-03 11:33:42,124 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-03 11:33:43,335 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:33:43,444 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-03 11:33:43,853 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-03 11:33:44,181 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-03 11:33:44,498 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-03-03 11:33:44,891 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/xet-read-token/40d588fdab0cc077b80d950b300bf66ad3c75b92 "HTTP/1.1 200 OK"
+2026-03-03 11:40:51,547 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-03 11:40:51,824 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"
+2026-03-03 11:40:52,202 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"
+2026-03-03 11:40:53,377 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-03 11:40:53,821 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"
+2026-03-03 11:40:54,199 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-03 11:40:54,691 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"
+2026-03-03 11:40:56,004 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/xet-read-token/7db4e727842ad86cc5cdfeaef4d14c6fb2b46511 "HTTP/1.1 200 OK"
+2026-03-03 11:41:07,549 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:41:07,717 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-03 11:41:08,437 httpx INFO HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-03 11:53:11,024 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 11:53:11,066 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 11:53:11,147 summarizerlogger INFO created directory at: artifacts
+2026-03-03 11:53:11,151 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 11:54:06,483 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 11:54:06,484 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 11:54:06,484 summarizerlogger INFO created directory at: artifacts
+2026-03-03 11:54:06,484 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 11:54:06,954 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:54:07,020 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-03 11:54:07,319 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:54:07,373 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-03 11:54:07,651 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-03 11:54:07,940 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-03 11:54:08,735 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:54:08,735 huggingface_hub.utils._http WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-03 11:54:08,790 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-03 11:54:09,107 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-03 11:54:09,441 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"
+2026-03-03 11:54:11,337 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"
+2026-03-03 11:54:12,072 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-03 11:54:12,556 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"
+2026-03-03 11:54:13,047 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-03 11:54:13,650 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"
+2026-03-03 11:54:32,012 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-03 11:54:32,083 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-03 12:02:45,275 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:02:45,294 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:02:45,298 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:02:45,300 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:02:58,065 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:02:58,069 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:02:58,069 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:02:58,069 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:24:22,030 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:24:22,032 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:24:22,032 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:24:22,032 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:30:35,776 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:30:35,785 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:30:35,788 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:30:35,791 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:30:53,863 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:30:53,868 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:30:53,872 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:30:53,874 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:38:03,832 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:38:03,849 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:38:03,851 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:38:03,851 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-03 12:38:40,283 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-03 12:38:40,290 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-03 12:38:40,292 summarizerlogger INFO created directory at: artifacts
+2026-03-03 12:38:40,295 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:24:53,037 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-31 03:26:23,319 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:26:23,326 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:26:23,329 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:26:23,331 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:38:21,585 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:38:21,590 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:38:21,592 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:38:21,595 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:38:31,039 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:38:31,044 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:38:31,046 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:38:31,048 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:43:08,573 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:43:08,578 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:43:08,580 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:43:08,582 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:43:13,787 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:43:13,792 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:43:13,795 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:43:13,797 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:45:08,576 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:45:08,591 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:45:08,593 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:45:08,595 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:45:09,071 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:45:09,074 huggingface_hub.utils._http WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-31 03:45:09,239 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:45:09,580 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:45:09,606 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:45:09,904 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:45:09,938 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 03:45:10,255 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 03:45:10,590 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 03:45:10,896 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer.model "HTTP/1.1 404 Not Found"
+2026-03-31 03:46:14,933 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:46:14,938 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:46:14,940 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:46:14,942 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:46:26,559 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:46:26,606 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:46:26,907 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:46:26,957 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 03:46:27,260 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 03:46:27,567 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 03:56:20,812 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:56:20,816 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:56:20,818 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:56:20,820 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:56:21,273 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:56:21,328 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:56:21,623 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:56:21,679 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:56:21,977 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:56:22,023 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 03:56:22,324 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 03:56:22,644 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 03:59:11,900 datasets INFO TensorFlow version 2.20.0 available.
+2026-03-31 03:59:58,236 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 03:59:58,241 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 03:59:58,243 summarizerlogger INFO created directory at: artifacts
+2026-03-31 03:59:58,246 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 03:59:58,718 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:59:58,758 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 03:59:59,062 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 03:59:59,073 huggingface_hub.utils._http WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-31 03:59:59,123 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 03:59:59,429 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 03:59:59,728 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 04:00:00,440 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:00:00,478 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 04:00:00,894 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-31 04:00:01,207 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"
+2026-03-31 04:00:02,979 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"
+2026-03-31 04:00:03,561 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-31 04:00:04,151 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"
+2026-03-31 04:00:04,880 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-31 04:00:05,526 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"
+2026-03-31 04:00:20,496 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:00:20,549 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-31 04:05:19,167 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 04:05:19,171 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 04:05:19,173 summarizerlogger INFO created directory at: artifacts
+2026-03-31 04:05:19,175 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 04:05:19,666 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:05:19,726 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 04:05:20,033 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 04:05:20,355 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 04:05:21,105 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:05:21,168 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 04:05:21,488 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-31 04:05:21,804 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"
+2026-03-31 04:05:23,685 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"
+2026-03-31 04:05:24,632 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-31 04:05:25,251 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"
+2026-03-31 04:05:25,839 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-31 04:05:26,589 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"
+2026-03-31 04:05:41,022 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:05:41,122 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-31 04:08:10,133 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 04:08:10,139 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 04:08:10,142 summarizerlogger INFO created directory at: artifacts
+2026-03-31 04:08:10,144 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 04:08:10,632 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:08:10,681 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 04:08:11,003 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 04:08:11,317 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 04:08:12,029 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:08:12,080 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-31 04:08:12,395 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-31 04:08:12,728 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"
+2026-03-31 04:08:14,477 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"
+2026-03-31 04:08:15,054 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-31 04:08:15,787 httpx INFO HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"
+2026-03-31 04:08:16,222 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-31 04:08:16,870 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"
+2026-03-31 04:08:31,114 httpx INFO HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 04:08:31,165 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"
+2026-03-31 05:55:43,829 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 05:55:43,830 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 05:55:46,194 datasets INFO TensorFlow version 2.16.1 available.
+2026-03-31 05:58:18,480 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 05:58:18,480 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 05:58:18,917 datasets INFO TensorFlow version 2.16.1 available.
+2026-03-31 06:01:27,981 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:01:27,981 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:01:28,427 datasets INFO TensorFlow version 2.16.1 available.
+2026-03-31 06:03:05,176 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:03:05,176 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:03:05,793 datasets INFO TensorFlow version 2.16.1 available.
+2026-03-31 06:03:56,346 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:03:56,346 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:03:56,959 datasets INFO TensorFlow version 2.16.1 available.
+2026-03-31 06:13:09,252 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:13:09,252 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:13:12,198 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:13:12,214 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:13:12,237 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:13:12,237 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:13:12,237 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:13:12,237 summarizerlogger INFO File already exits
+2026-03-31 06:13:12,418 summarizerlogger INFO Unzipping completed
+2026-03-31 06:13:12,418 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:13:12,418 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:13:12,422 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:13:12,425 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:13:12,425 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:13:12,426 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:13:17,803 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:13:17,803 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:13:17,803 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:13:17,818 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:13:17,819 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:13:17,819 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:13:17,821 summarizerlogger ERROR "'ConfigBox' object has no attribute 'evaluation_strategy'"
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\TextSummarizzer\src\textSummarizer\config\configuration.py", line 56, in get_model_trainer_config
+    evaluation_strategy = params.evaluation_strategy,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+2026-03-31 06:15:06,147 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:15:06,147 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:15:09,187 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:15:09,191 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:15:09,193 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:15:09,194 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:15:09,195 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:15:09,195 summarizerlogger INFO File already exits
+2026-03-31 06:15:09,360 summarizerlogger INFO Unzipping completed
+2026-03-31 06:15:09,360 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:15:09,361 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:15:09,365 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:15:09,367 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:15:09,368 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:15:09,369 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:15:11,695 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:15:11,695 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:15:11,695 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:15:11,710 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:15:11,710 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:15:11,710 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:15:11,713 summarizerlogger ERROR "'ConfigBox' object has no attribute 'evaluation_strategy'"
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Conda\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\TextSummarizzer\src\textSummarizer\config\configuration.py", line 56, in get_model_trainer_config
+    eval_strategy = params.evaluation_strategy,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+2026-03-31 06:18:09,384 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:18:09,384 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:18:12,316 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:18:12,329 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:18:12,329 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:18:12,329 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:18:12,329 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:18:12,329 summarizerlogger INFO File already exits
+2026-03-31 06:18:12,489 summarizerlogger INFO Unzipping completed
+2026-03-31 06:18:12,489 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:18:12,489 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:18:12,489 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:18:12,498 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:18:12,499 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:18:12,500 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:18:14,759 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:18:14,759 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:18:14,759 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:18:14,771 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:18:14,772 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:18:14,773 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:18:14,773 summarizerlogger ERROR ModelTrainerConfig.__init__() got an unexpected keyword argument 'per_device_eval_batch_size'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\TextSummarizzer\src\textSummarizer\config\configuration.py", line 46, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig.__init__() got an unexpected keyword argument 'per_device_eval_batch_size'
+2026-03-31 06:19:36,490 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:19:36,490 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:19:39,414 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:19:39,414 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:19:39,430 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:19:39,431 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:19:39,431 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:19:39,431 summarizerlogger INFO File already exits
+2026-03-31 06:19:39,589 summarizerlogger INFO Unzipping completed
+2026-03-31 06:19:39,589 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:19:39,590 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:19:39,594 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:19:39,596 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:19:39,597 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:19:39,597 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:19:41,855 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:19:41,855 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:19:41,860 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:19:41,863 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:19:41,864 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:19:41,865 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:20:03,486 summarizerlogger ERROR module 'tensorflow' has no attribute 'io'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 29, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 558, in __init__
+    self.callback_handler = CallbackHandler(
+                            ^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\trainer_callback.py", line 314, in __init__
+    self.add_callback(cb)
+  File "E:\Conda\Lib\site-packages\transformers\trainer_callback.py", line 331, in add_callback
+    cb = callback() if isinstance(callback, type) else callback
+         ^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\integrations\integration_utils.py", line 598, in __init__
+    from torch.utils.tensorboard import SummaryWriter  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\writer.py", line 19, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+                              ^^^^^
+  File "E:\Conda\Lib\site-packages\tensorboard\lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow' has no attribute 'io'
+2026-03-31 06:21:50,042 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:21:50,055 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:21:53,672 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:21:53,688 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:21:53,691 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:21:53,692 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:21:53,692 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:21:53,693 summarizerlogger INFO File already exits
+2026-03-31 06:21:53,842 summarizerlogger INFO Unzipping completed
+2026-03-31 06:21:53,842 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:21:53,842 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:21:53,855 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:21:53,857 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:21:53,858 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:21:53,859 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:21:56,177 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:21:56,177 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:21:56,194 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:21:56,197 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:21:56,198 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:21:56,198 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:22:15,744 summarizerlogger ERROR module 'tensorflow' has no attribute 'io'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 29, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\trainer.py", line 558, in __init__
+    self.callback_handler = CallbackHandler(
+                            ^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\trainer_callback.py", line 314, in __init__
+    self.add_callback(cb)
+  File "E:\Conda\Lib\site-packages\transformers\trainer_callback.py", line 331, in add_callback
+    cb = callback() if isinstance(callback, type) else callback
+         ^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\transformers\integrations\integration_utils.py", line 598, in __init__
+    from torch.utils.tensorboard import SummaryWriter  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\writer.py", line 19, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "E:\Conda\Lib\site-packages\torch\utils\tensorboard\_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+                              ^^^^^
+  File "E:\Conda\Lib\site-packages\tensorboard\lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow' has no attribute 'io'
+2026-03-31 06:24:09,880 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:24:09,880 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:24:13,383 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:24:13,388 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:24:13,391 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:24:13,391 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:24:13,391 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:24:13,391 summarizerlogger INFO File already exits
+2026-03-31 06:24:13,553 summarizerlogger INFO Unzipping completed
+2026-03-31 06:24:13,553 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:24:13,553 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:24:13,553 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:24:13,560 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:24:13,561 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:24:13,562 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:24:15,892 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:24:15,893 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:24:15,897 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:24:15,900 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:24:15,900 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:24:15,901 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:24:28,830 summarizerlogger ERROR TrainingArguments.__init__() got an unexpected keyword argument 'eval_strategy'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 23, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'eval_strategy'
+2026-03-31 06:25:59,654 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:25:59,654 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:26:03,090 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:26:03,099 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:26:03,103 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:26:03,103 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:26:03,103 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:26:03,103 summarizerlogger INFO File already exits
+2026-03-31 06:26:03,265 summarizerlogger INFO Unzipping completed
+2026-03-31 06:26:03,265 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:26:03,265 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:26:03,271 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:26:03,275 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:26:03,276 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:26:03,276 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:26:05,481 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:26:05,481 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:26:05,497 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:26:05,501 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:26:05,502 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:26:05,502 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 06:26:18,928 summarizerlogger ERROR Trainer.__init__() got an unexpected keyword argument 'processing_class'
+Traceback (most recent call last):
+  File "E:\TextSummarizzer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizzer\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "E:\TextSummarizzer\src\textSummarizer\components\model_trainer.py", line 36, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Trainer.__init__() got an unexpected keyword argument 'processing_class'
+2026-03-31 06:28:03,806 numexpr.utils INFO Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-03-31 06:28:03,806 numexpr.utils INFO NumExpr defaulting to 8 threads.
+2026-03-31 06:28:07,343 summarizerlogger INFO stage Data Ingestion stage initiated
+2026-03-31 06:28:07,348 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:28:07,350 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:28:07,351 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:28:07,352 summarizerlogger INFO created directory at: artifacts/data_ingestion
+2026-03-31 06:28:07,352 summarizerlogger INFO File already exits
+2026-03-31 06:28:07,504 summarizerlogger INFO Unzipping completed
+2026-03-31 06:28:07,504 summarizerlogger INFO Stage Data Ingestion stage Completed
+2026-03-31 06:28:07,504 summarizerlogger INFO stage Data Transformation stage initiated
+2026-03-31 06:28:07,514 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:28:07,517 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:28:07,517 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:28:07,517 summarizerlogger INFO created directory at: artifacts/data_transformation
+2026-03-31 06:28:09,757 summarizerlogger INFO Stage Data Transformation stage Completed
+2026-03-31 06:28:09,757 summarizerlogger INFO stage Model Trainer stage initiated
+2026-03-31 06:28:09,773 summarizerlogger INFO yaml file: config\config.yaml loaded successfully
+2026-03-31 06:28:09,776 summarizerlogger INFO yaml file: params.yaml loaded successfully
+2026-03-31 06:28:09,776 summarizerlogger INFO created directory at: artifacts
+2026-03-31 06:28:09,777 summarizerlogger INFO created directory at: artifacts/model_trainer
+2026-03-31 07:40:10,203 summarizerlogger INFO Stage Model Trainer stage Completed
